@@ -29,6 +29,29 @@
         <h2>Parallax Scrolling Effects</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, repellendus. Laborum ducimus fuga modi eaque corrupti porro ex quaerat, perferendis eius eveniet ab fugit voluptatum vitae quod magnam officia. Perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo dolor aliquid natus nisi nam, est, modi ipsum officia, minima at quaerat sapiente harum aspernatur architecto repudiandae ullam amet. Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia similique sequi magnam eaque deleniti maiores exercitationem quia praesentium dolorum! Architecto repellendus omnis quidem mollitia, autem est ea voluptates illo?  <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, repellendus. Laborum ducimus fuga modi eaque corrupti porro ex quaerat, perferendis eius eveniet ab fugit voluptatum vitae quod magnam officia. Perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo dolor aliquid natus nisi nam, est, modi ipsum officia, minima at quaerat sapiente harum aspernatur architecto repudiandae ullam amet. Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia similique sequi magnam eaque deleniti maiores exercitationem quia praesentium dolorum! Architecto repellendus omnis quidem mollitia, autem est ea voluptates illo?  <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nostrum sed quasi sequi delectus consequuntur laborum consequatur, eaque facere minus voluptate esse quibusdam beatae! Consequuntur necessitatibus esse provident dignissimos maxime. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, nemo repellendus, in corporis quae fugiat libero neque vitae pariatur eum recusandae dolorum nihil doloribus. Saepe velit quam enim rem animi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa facilis quibusdam reprehenderit tempora ratione repudiandae! Doloribus fuga consequuntur vero reprehenderit! Odio delectus cupiditate ullam a labore quae recusandae nihil! <br><br>t. Ullam, repellendus. Laborum ducimus fuga modi eaque corrupti porro ex quaerat, perferendis eius eveniet ab fugit voluptatum vitae quod magnam officia. Perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo dolor aliquid natus nisi nam, est, modi ipsum officia, minima at quaerat sapiente harum aspernatur architecto repudiandae ullam amet. Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia similique sequi magnam eaque deleniti maiores exercitationem quia praesentium dolorum! Architecto repellendus omnis quidem mollitia, autem est ea voluptates illo?  <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, repellendus. Laborum ducimus fuga modi eaque corrupti porro ex quaerat, perferendis eius eveniet ab fugit voluptatum vitae quod magnam officia. Perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo dolor aliquid natus nisi nam, est, modi ipsum officia, minima at quaerat sapiente harum aspernatur architecto repudiandae ullam amet. Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia similique sequi magnam eaque deleniti maiores exercitationem quia praesentium dolorum! Architecto repellendus omnis quidem mollitia, autem est ea voluptates illo?  <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nostrum sed quasi sequi delectus consequuntur laborum consequatur, eaque facere minus voluptate esse quibusdam beatae! Consequuntur necessitatibus esse provident dignissimos maxime. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, nemo repellendus, in corporis quae fugiat libero neque vitae pariatur eum recusandae dolorum nihil doloribus. Saepe velit quam enim rem animi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa facilis quibusdam reprehenderit tempora ratione repudiandae! Doloribus fuga consequuntur vero reprehenderit! Odio delectus cupiditate ullam a labore quae recusandae nihil! <br><br></p>
     </div>
+    
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.05 + 'px'; 
+            mountains_behind.style.top = value*0.5 + 'px';
+            mountains_front.style.top = value*0 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            text.style.marginTop = value*1.4 + 'px';
+            btn.style.marginTop = value*1.4 + 'px';
+            header.style.top = value*0.5 + 'px';
+        })
+
+    </script>
 
 </body>
 </html>
